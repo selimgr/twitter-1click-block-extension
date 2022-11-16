@@ -11,6 +11,7 @@ div[data-testid="block-btn"] > div {
     transition-duration: 0.2s;
     transition-timing-function: ease;
     border-radius: 18px;
+    background: none;
     color: var(--block-btn-color)!important;
 }
 
