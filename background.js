@@ -14,7 +14,8 @@ function injectBlockButtons() {
     // Inject the button
     tweets.forEach(tweet => {
         // Get icons
-        var actionIcons = tweet.querySelectorAll('div[role="group"] > div')
+        var actionBar = tweet.querySelector('div[role="group"]:last-child')
+        var actionIcons = actionBar.children;
 
         // Copy favIcon
         var blockIcon = actionIcons[2].cloneNode(true);
@@ -32,8 +33,8 @@ function injectBlockButtons() {
         // Mark as already injected BEFORE inserting.. otherwise it will loop!
         tweet.setAttribute('data-blockButton', 'true');
         // Insert the block icon
-        tweet.querySelector('div[role="group"]').insertBefore(blockIcon, actionIcons[3]);
-
+        actionBar.insertBefore(blockIcon, actionIcons[3]);
+        
     });
 }
 
