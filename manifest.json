@@ -15,7 +15,9 @@
     "content_scripts": [
         {
             "matches": ["https://twitter.com/*"],
-            "js": ["background.js"]
+            "css": ["style.css"],
+            "js": ["background.js"],
+            "run_at": "document_start"
         }
     ]
 }
