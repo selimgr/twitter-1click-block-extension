@@ -23,7 +23,7 @@ function blockUser(event) {
 function injectBlockButtons() {
     // Retrieve the tweets
     var tweets = [...document.getElementsByTagName("article")];
-    tweets = tweets.filter((tweet) => tweet.getAttribute("data-testid") == "tweet" && tweet.getAttribute("data-blockButton") != "true")
+    tweets = tweets.filter((tweet) => tweet.getAttribute("data-testid") == "tweet" && tweet.getAttribute("data-blockButton") != "true" && !tweet.querySelector('[data-testid="block-btn"]'))
 
     // Inject the button
     tweets.forEach(tweet => {
