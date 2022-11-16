@@ -1,14 +1,14 @@
-# 
-<img align="left" src="/icons/icon128.png">
-
-**Twitter 1Click Block Extension**
-
+<img align="left" src="/icons/icon128.png"/>   
+<b>Twitter 1Click Block Extension</b>
+<br>
 Block annoying people on Twitter with a single click!  
-An extension already exists on the Chrome Web Store but old, buggy, and uses JQuery 😨  
-> Works on Chromium-based browsers (Chrome, Brave, Edge..)
+<br>
+An extension already exists on the Chrome Web Store but it is old, glitchy, and uses JQuery 😨
+<br>
+<blockquote>Works on Chromium-based browsers (Chrome, Brave, Edge..)</blockquote>
 
 ## Preview
-<img src="https://i.imgur.com/Wqj4W0Z.png">
+<img src="https://i.imgur.com/Wqj4W0Z.png" />
 
 * Works on all tweets, no confirmation dialog
 * Fits perfectly as if it had always been there
