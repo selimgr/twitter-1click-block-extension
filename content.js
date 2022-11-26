@@ -7,7 +7,7 @@ let currentUsername = null
 
 /**
  * Fetch the username
- * @returns {null}
+ * @returns {null|string}
  */
 const fetchUsername = () => {
   if (currentUsername != null) return currentUsername // use cache
