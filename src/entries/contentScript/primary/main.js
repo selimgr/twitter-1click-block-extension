@@ -28,6 +28,7 @@ function blockUser (event) {
   if (!tweetCaret) return
 
   tweetCaret.click()
+
   document.querySelector('div[role="menuitem"][data-testid="block"]').click()
   document.querySelector('div[data-testid="confirmationSheetConfirm"]').click()
 }
@@ -36,6 +37,9 @@ function blockUser (event) {
  * Inject the block buttons
  */
 function injectBlockButtons () {
+  const isLogged = document.querySelector('a[data-testid="AppTabBar_Profile_Link"]') != null
+  if (!isLogged) return
+
   // Retrieve the tweets
   let tweets = [...document.getElementsByTagName('article')]
   tweets = tweets.filter((tweet) => tweet.getAttribute('data-testid') === 'tweet' && tweet.getAttribute('data-blockButton') !== 'true' && !tweet.querySelector('[data-testid="block-btn"]'))
