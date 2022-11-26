@@ -1,4 +1,4 @@
-<img align="left" src="/icons/icon128.png"/>   
+<img align="left" src="/public/icons/icon128.png"/>   
 <b>Twitter 1Click Block Extension</b>
 <br>
 Block annoying people on Twitter with a single click!  
