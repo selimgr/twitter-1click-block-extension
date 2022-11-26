@@ -1,0 +1,21 @@
+{
+  "name": "twitter-1click-block-extension",
+  "version": "1.0.0",
+  "displayName": "Twitter 1Click Block",
+  "author": "selimgr",
+  "description": "Twitter 1Click Block Extension. Extension to block annoying people on Twitter with a single click!",
+  "scripts": {
+    "build": "vite build",
+    "serve:chrome": "web-ext run -t chromium --start-url \"https://twitter.com/elonmusk/status/1594751560147312641\" --source-dir ./dist/"
+  },
+  "license": "MIT",
+  "devDependencies": {
+    "@types/chrome": "^0.0.203",
+    "@types/webextension-polyfill": "^0.9.1",
+    "vite": "~3.2.4",
+    "web-ext": "^7.4.0"
+  },
+  "dependencies": {
+    "webextension-polyfill": "^0.10.0"
+  }
+}
