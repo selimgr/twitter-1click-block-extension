@@ -2,12 +2,6 @@
   "manifest_version": 3,
   "content_scripts": [
     {
-      "js": [
-        "main.js"
-      ],
-      "css": [
-        "main.css"
-      ],
       "matches": [
         "https://twitter.com/*"
       ]
