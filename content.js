@@ -44,8 +44,8 @@ function injectBlockButtons () {
   // Inject the button
   tweets.forEach(tweet => {
     // Checks the author
-    if (!tweet.querySelectorAll('div[data-testid="User-Names"] a[role="link"]') || tweet.querySelectorAll('div[data-testid="User-Names"] a[role="link"]').length < 1) return
-    const author = tweet.querySelectorAll('div[data-testid="User-Names"] a[role="link"]')[1].textContent
+    if (!tweet.querySelectorAll('div[data-testid="User-Name"] a[role="link"]') || tweet.querySelectorAll('div[data-testid="User-Name"] a[role="link"]').length < 1) return
+    const author = tweet.querySelectorAll('div[data-testid="User-Name"] a[role="link"]')[1].textContent
     if (author === fetchUsername()) return
 
     // Get icons
