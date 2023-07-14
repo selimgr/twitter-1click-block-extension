@@ -47,5 +47,5 @@ jobs:
       - name: Upload production-ready build files
         uses: actions/upload-artifact@v3
         with:
-          name: production-files
+          name: twitter-1click-block-extension
           path: ./dist
