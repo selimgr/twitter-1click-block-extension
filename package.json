@@ -10,12 +10,12 @@
   },
   "license": "MIT",
   "devDependencies": {
-    "@types/chrome": "^0.0.241",
-    "@types/webextension-polyfill": "^0.10.1",
-    "vite": "~4.4.4",
-    "web-ext": "^7.6.2"
+    "@types/chrome": "0.0.241",
+    "@types/webextension-polyfill": "0.10.1",
+    "vite": "4.4.4",
+    "web-ext": "7.6.2"
   },
   "dependencies": {
-    "webextension-polyfill": "^0.10.0"
+    "webextension-polyfill": "0.10.0"
   }
 }
