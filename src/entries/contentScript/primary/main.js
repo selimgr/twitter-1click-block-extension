@@ -75,4 +75,9 @@ function injectBlockButtons () {
 }
 
 document.addEventListener('DOMContentLoaded', injectBlockButtons)
-document.addEventListener('DOMNodeInserted', injectBlockButtons)
+
+// Using MutationObserver to listen for changes and inject the block buttons
+const observer = new MutationObserver(injectBlockButtons)
+observer.observe(document.body, {
+  childList: true, subtree: true
+})
